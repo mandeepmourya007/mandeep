@@ -19,7 +19,7 @@ function loadSkills(skills) {
 }
 
 function loadProjects(projects) {
-    projects.sort(function(a, b) {
+    projects.sort(function (a, b) {
         return a.sn - b.sn;
     });
     var i = 0,
@@ -45,7 +45,7 @@ function loadProjects(projects) {
 }
 
 function loadWorks(experince) {
-    experince.sort(function(a, b) {
+    experince.sort(function (a, b) {
         return a.sn - b.sn;
     });
     var i;
@@ -75,7 +75,7 @@ function loadEducations(educations) {
     for (i = 0; i < educations.length; i++) {
         education = '<div class="row education"><div class="col m6 s12">					<div class="row title">' + educations[i].course + '<hr></div><div class="row">' + educations[i].periodStart + '-' + educations[i].periodEnd + '</div><div class="row">' + educations[i].inst + '</div><div class="row">' + educations[i].board + '</div>		<div class="row">Scored: ' + educations[i].score + '</div></div><div class="col m6 s12 details"><ul class="collapsible" data-collapsible="accordion"><li><div class="collapsible-header"><i class="material-icons">view_list</i>Completed following Core courses</div><div class="collapsible-body">';
         var courses = educations[i].courses;
-        courses.sort(function(a, b) {
+        courses.sort(function (a, b) {
             return a.sn - b.sn;
         });
         var coursesInnerHTML = '';
@@ -92,7 +92,7 @@ function loadEducations(educations) {
 function loadLinks(profileLinks) {
     var i = 0,
         j;
-    profileLinks.sort(function(a, b) {
+    profileLinks.sort(function (a, b) {
         return a.sn - b.sn;
     });
     var profileLinksInnerHTML = '';
@@ -108,7 +108,7 @@ function loadLinks(profileLinks) {
 }
 
 function loadLikes(likes) {
-    likes = likes.sort(function(a, b) {
+    likes = likes.sort(function (a, b) {
         return a.sn - b.sn;
     });
     var i;
@@ -153,24 +153,24 @@ $(window).resize(onWindowResize);
 var profile;
 swal({
     title: "Hello World!!!",
-    text: "Hello visitor, you have landed upon little webspace of moghya. I hope you're doing well."
-        // buttons: ["Nope, I'm just looking around.", "Yes, I'm hiring :)"]
-        // buttons: {
-        // 	cancel: {
-        // 	  text: "Nope.",
-        // 	  value: false,
-        // 	  visible: true,
-        // 	  className: "button-cancel",
-        // 	  closeModal: true,
-        // 	},
-        // 	confirm: {
-        // 	  text: "Yes, I'm hiring.",
-        // 	  value: true,
-        // 	  visible: true,
-        // 	  className: "button-confirm",
-        // 	  closeModal: true
-        // 	}
-        // }
+    text: "Hello visitor, you have landed upon little webspace of Mandeep. I hope you're doing well."
+    // buttons: ["Nope, I'm just looking around.", "Yes, I'm hiring :)"]
+    // buttons: {
+    // 	cancel: {
+    // 	  text: "Nope.",
+    // 	  value: false,
+    // 	  visible: true,
+    // 	  className: "button-cancel",
+    // 	  closeModal: true,
+    // 	},
+    // 	confirm: {
+    // 	  text: "Yes, I'm hiring.",
+    // 	  value: true,
+    // 	  visible: true,
+    // 	  className: "button-confirm",
+    // 	  closeModal: true
+    // 	}
+    // }
 });
 //.then((value)=>{
 // 	if(value===true) {
@@ -238,7 +238,7 @@ function mandeep() {
 }
 
 $.get("js/profile.json",
-    function(data, status) {
+    function (data, status) {
         console.log('Got profile:', data, ' \nwith status:', status);
         if (status !== "success") {
             window.location.href = "/error.html";
