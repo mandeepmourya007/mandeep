@@ -11,7 +11,7 @@
                 "Punjab"
             ]
         },
-        "email": "mandeepmoury007@gmail.com",
+        "email": "",
         "mob": "+91 9779455049"
     },
     "educations": [
@@ -25,11 +25,11 @@
             "courses": []
         },
         {
-            "periodStart": "July 2016",
-            "periodEnd": " May 2020",
-            "course": "B.Tech Computer Science",
-            "score": "8.2 CGPA",
-            "inst": "Guru Nanak Dev University,Amritsar",
+            "periodStart": "July 2020",
+            "periodEnd": " May 2022",
+            "course": "M.Tech Information Technology",
+            "score": "8.8 CGPA",
+            "inst": "IIITA",
             "board": "",
             "courses": [
                 {
